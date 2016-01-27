@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="21" time="3.414273" name="Negative scenarios for /users API">
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : |  | vitalii@nomail.com | secret | Name can't be blank |)" time="0.593422">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo |  | secret | Email can't be blank, Email is invalid |)" time="0.166751">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | vitalii@nomail.com |  | Password can't be blank |)" time="0.088945">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | vitalii@hotmail.com | secret | Email has already been taken |)" time="0.152458">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | vitalii@nomail.com | sec | Password is too short (minimum is 6 characters) |)" time="0.143940">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | plainaddress | secret | Email is invalid | Missing @ sign and domain |)" time="0.148680">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | #@%^%#$@#$@#.com | secret | Email is invalid | Garbage |)" time="0.140220">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | @domain.com | secret | Email is invalid | Missing username |)" time="0.147360">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | Joe Smith &lt;email@domain.com&gt; | secret | Email is invalid | Encoded html within email is invalid |)" time="0.151272">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email.domain.com | secret | Email is invalid | Missing @ |)" time="0.152076">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email@domain@domain.com | secret | Email is invalid | Two @ sign |)" time="0.142288">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email@domain.com (Joe Smith) | secret | Email is invalid | Text followed email is not allowed |)" time="0.145511">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email@domain | secret | Email is invalid | Missing top level domain (.com/.net/.org/etc) |)" time="0.152977">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email@111.222.333.44444 | secret | Email is invalid | Invalid IP format |)" time="0.149808">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Create new user with invalid user details (outline example : | Vitalii Kachalo | email@domain..com | secret | Email is invalid | Multiple dot in the domain portion is invalid |)" time="0.141875">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Login with invalid user details" time="0.145801">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Logout user" time="0.070709">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Get user details without valid authentication (user is not logged in)" time="0.073279">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Delete user without valid authentication (user is not logged in)" time="0.072655">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Get user without valid authorization (user is logged in, but trying to access another account)" time="0.217810">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Negative scenarios for /users API" name="Delete user without valid authorization (user is logged in, but trying to delete another account)" time="0.216436">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
